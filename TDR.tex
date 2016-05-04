@@ -1,0 +1,138 @@
+% THIS IS SIGPROC-SP.TEX - VERSION 3.1
+% WORKS WITH V3.2SP OF ACM_PROC_ARTICLE-SP.CLS
+% APRIL 2009
+%
+% It is an example file showing how to use the 'acm_proc_article-sp.cls' V3.2SP
+% LaTeX2e document class file for Conference Proceedings submissions.
+% ----------------------------------------------------------------------------------------------------------------
+% This .tex file (and associated .cls V3.2SP) *DOES NOT* produce:
+%       1) The Permission Statement
+%       2) The Conference (location) Info information
+%       3) The Copyright Line with ACM data
+%       4) Page numbering
+% ---------------------------------------------------------------------------------------------------------------
+% It is an example which *does* use the .bib file (from which the .bbl file
+% is produced).
+% REMEMBER HOWEVER: After having produced the .bbl file,
+% and prior to final submission,
+% you need to 'insert'  your .bbl file into your source .tex file so as to provide
+% ONE 'self-contained' source file.
+%
+% Questions regarding SIGS should be sent to
+% Adrienne Griscti ---> griscti@acm.org
+%
+% Questions/suggestions regarding the guidelines, .tex and .cls files, etc. to
+% Gerald Murray ---> murray@hq.acm.org
+%
+% For tracking purposes - this is V3.1SP - APRIL 2009
+
+\documentclass{review}
+
+\begin{document}
+
+\title{TDR-S: A 2-cycle Health Condition Classification System}
+
+\numberofauthors{1} %  in this sample file, there are a *total*
+% of EIGHT authors. SIX appear on the 'first-page' (for formatting
+% reasons) and the remaining two appear in the \additionalauthors section.
+%
+% \author{
+% \alignauthor
+% Duncan Yung\\
+%        \affaddr{Department of Computer Science}\\
+%        \affaddr{University of Pittsburgh, PA, USA}\\
+%        \email{duncanyung@cs.pitt.edu}\\
+% }
+
+% There's nothing stopping you putting the seventh, eighth, etc.
+% author on the opening page (as the 'third row') but we ask,
+% for aesthetic reasons that you place these 'additional authors'
+% in the \additional authors block, viz.
+% \additionalauthors{Additional authors: John Smith (The Th{\o}rv{\"a}ld Group,
+% email: {\texttt{jsmith@affiliation.org}}) and Julius P.~Kumquat
+% (The Kumquat Consortium, email: {\texttt{jpkumquat@consortium.net}}).}
+% \date{30 July 1999}
+% Just remember to make sure that the TOTAL number of authors
+% is the number that will appear on the first page PLUS the
+% number that will appear in the \additionalauthors section.
+
+\maketitle
+% \begin{abstract}
+% This paper provides a sample of a \LaTeX\ document which conforms to
+% the formatting guidelines for ACM SIG Proceedings.
+% It complements the document \textit{Author's Guide to Preparing
+% ACM SIG Proceedings Using \LaTeX$2_\epsilon$\ and Bib\TeX}. This
+% source file has been written with the intention of being
+% compiled under \LaTeX$2_\epsilon$\ and BibTeX.
+
+% The developers have tried to include every imaginable sort
+% of ``bells and whistles", such as a subtitle, footnotes on
+% title, subtitle and authors, as well as in the text, and
+% every optional component (e.g. Acknowledgments, Additional
+% Authors, Appendices), not to mention examples of
+% equations, theorems, tables and figures.
+
+% To make best use of this sample document, run it through \LaTeX\
+% and BibTeX, and compare this source code with the printed
+% output produced by the dvi file.\cite{duncankNN}
+% \end{abstract}
+
+% A category with the (minimum) three required fields
+% \category{H.4}{Information Systems Applications}{Miscellaneous}
+%A category including the fourth, optional field follows...
+% \category{D.2.8}{Software Engineering}{Metrics}[complexity measures, performance measures]
+
+% \terms{Theory}
+
+% \keywords{ACM proceedings, \LaTeX, text tagging} % NOT required for Proceedings
+
+% \section{Summary}
+% no \IEEEPARstart
+
+% paper summary...........\cite{marai12}
+
+% \subsection{Subsection Heading Here}
+% Subsection text here.
+
+
+% \section{Technical Strengths}
+% Technical Strengths................\cite{marai12}
+
+% \section{Technical Weakness}
+% Technical Weakness................\cite{marai12}
+%
+% The following two commands are all you need in the
+% initial runs of your .tex file to
+% produce the bibliography for the citations in your paper.
+% \input{introduction}
+% {\bf \large Abstract:}
+% According to statistics from Boston police department, 
+% there are more than 30 thousand crime incident reported in Boston in 2012. 
+% Hence, it is not rare that crimes happen in places that you often pass by and in your neighborhood.
+% CrimeAlert is a real time crime prediction system that help people to predict whether a crime (e.g. robbery, burglary, assault, theft, shooting) 
+% will happen in a location. The system is based on a decision tree model which exploit meteorological, spatial, and temporal features for prediction.
+% We evaluated our model using cross-validation and the result shows that our model has an 97$\%$ accuracy.
+
+
+% \input{introduction}
+\input{overview}
+\input{fastCycle}
+\input{slowCycle}
+% \input{problemStat}
+\input{experiment}
+% \input{relatedWork}
+
+\bibliographystyle{abbrv}
+\bibliography{review}  % sigproc.bib is the name of the Bibliography in this case
+% You must have a proper ".bib" file
+%  and remember to run:
+% latex bibtex latex latex
+% to resolve all references
+%
+% ACM needs 'a single self-contained file'!
+%
+%APPENDICES are optional
+%\balancecolumns
+
+% That's all folks!
+\end{document}

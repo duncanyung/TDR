@@ -1,0 +1,31 @@
+\section{Experiment}\label{sec:exp}
+
+
+\subsection{Experiment Design}
+
+\subsubsection{Fast Cycle}
+In this experiment, we want to evaluate the effectiveness of our outliner detection model in Section~\ref{sec:outliner}. 
+We want to show that:
+\begin{enumerate}
+ \item most people are healthy people and they would have similar $F_c$, and 
+ \item most people can approximately determine their $F_c$. 
+\end{enumerate}
+
+
+Since we are unable to obtain real $F_c$ data, in this experiment, we will use similar data to evaluate the 
+effectiveness of our proposed model. 
+% We ask workers in Amazon Mechanical Turk to understand what are Tongue and sweaty 
+We perform our experiment in Amazon Mechanical Turk. 
+Given 5 pictures of 5 different faces, we ask 1000 workers to determine the size of nose, eyes, and mouth in every picture. 
+For all 5 pictures, persons in the pictures have similar size of nose, eyes, and mouth. 
+Worker can offer a score from 1 to 5, where 1 is the smallest size and 5 is the biggest size. 
+Then, we put all data points together and build a model using method in Section~\ref{sec:outliner}. 
+We want to show that it is possible to find a dense region in all data points, which implies 
+most people would have similar sense while a small number of people are different from majority and people are able to 
+offer approximate score for things that they understand. 
+
+
+\subsubsection{Slow Cycle}
+{\bf To Prof. Liang, could you please fill up this sub-section?}
+
+
