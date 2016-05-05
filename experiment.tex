@@ -27,5 +27,18 @@ offer approximate score for things that they understand.
 
 \subsubsection{Slow Cycle}
 {\bf To Prof. Liang, could you please fill up this sub-section?}
+Since no real data, in order to make a good social network learning model, we design a similar experiment named gray-scale learning.
+(1)Definiton: two kinds of person, one is master(answers always is right), another are students(keep learning for improving judgement).
+(2)Basic knowledge: gray-scale has 256 value, from 0 to 255. Before the expereiemnt, all students are given a pitcure with 5 
+ five colors which show five different gray values.
+(3)learning process: In every learning cycle, the master and students are given a new picture which contains five random colors.  Students need to 
+fill out gray values for every colors based on their basic knowledge and knoelwedge learnt in previous cycles. 
+The master also has to fill out gray values for all five random colors. The answer offered by the master are given to all students at 
+the end of this cycle so that students can learn from the master's answer, which is always treated as the right answer. 
+After got the right answer from the master, they will enter next slow cycle. 
+(4)We will record every judgement result for every students and the master, and the records will be used for evaluating the effectiveness of 
+the social network model. 
+
+
 
 
